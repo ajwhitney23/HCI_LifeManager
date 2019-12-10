@@ -1,0 +1,364 @@
+header {
+    font-family: 'Trebuchet MS';
+    font-weight: bold condensed;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 3px;
+}
+
+#heading a {
+    text-decoration: none;
+    float: left;
+    widows: 50%;
+}
+
+#heading a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+#heading {
+    padding: 42px;
+}
+
+body {
+    flex: 1 0 auto;
+    font-family: 'Trebuchet MS';
+    font-weight: bold condensed;
+    color: white;
+    font-size: 16px;
+    background: black;
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+    padding: 1px;
+}
+
+h2 {
+    font-family: 'Trebuchet MS';
+    font-weight: bold condensed;
+    font-size: 17px;
+}
+
+#content {
+    background: black;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding: 42px;
+}
+
+
+#main_nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+    font-weight: bold;
+}
+ 
+#main_nav ul li {
+	background-color: black;
+	border: 1px solid black;
+	color: lightgray;
+	display: block;
+	margin-bottom: 10px;
+    padding: 12px 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+}
+ 
+#main_nav ul li a{
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#main_nav a:hover {
+    text-decoration: none;
+    color: darkgray;
+    transition-duration: 1s;
+}
+
+ 
+button.menu{
+	background-color: black;
+	border: 3px solid lightgray;
+	color: whitesmoke;
+	display: block;
+	margin-bottom: 10px;
+    padding: 12px 10px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+#button-container {
+    text-align: center;
+}
+
+
+button.menu:hover {
+    text-decoration: none;
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+button.settings {
+ 
+    /*center the button*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     
+    /* add your code to set top and bottom margins */
+    margin-top: 10px;
+    margin-bottom: 10px;
+     
+    /*set width and height for the button*/
+    width: 50px;
+    height: 50px;
+
+    background-image: url("images/wheel.png");
+
+    background-color: darkslategray;
+	color: lightgray;
+    border-radius: 25px;
+
+    float: right;
+
+}
+
+button.settings:hover {
+    background-color: white;
+    transition-duration: 1s;
+}
+
+#wheel {
+    height: 30px;
+    width: 30px;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    /*position: relative;*/
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+footer {
+    background: #666;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+}
+
+
+#footer {
+    flex-shrink: 0;
+    width: 100%;
+    bottom: 0;
+    /* position: fixed;*/
+}
+
+.bottomnav {
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+  }
+  
+.bottomnav button {
+    float: left;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 33.33333%;
+    height: 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.bottomnav button:hover {
+    border: 3px solid white;
+}
+  
+.bottomnav button.active {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.bottomnav h2.active {
+    color: black;
+}
+
+.bottomnav h2.notActive {
+    color: white;
+}
+
+.bottomnav h2:hover {
+    text-decoration: underline;
+}
+
+.bottomnav button.notActive {
+    border: 3px solid white;
+}
+
+button.list{
+	background-color: black;
+	border: 3px solid white;
+	color: whitesmoke;
+	display: block;
+	margin-bottom: 10px;
+    padding: 12px 10px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+
+
+button.list:hover {
+    text-decoration: none;
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+input.listInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Trebuchet MS';
+  }
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+ul li{
+    text-align: left;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #101010;
+}
+
+.left
+{
+    padding-top: 10px;
+    width: 70%;
+    float: left;
+}
+.right
+{
+    padding-top: 10px;
+    width: 20%;
+    float: right;
+}
+
+#list-div
+{
+    padding: 3px 3px 3px 3px;
+}
+
+input.budgetInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Trebuchet MS';
+  }
+
+  .left2
+{
+    padding-top: 10px;
+    width: 70%;
+    height: 130px;
+    float: left;
+    padding-right: 1%;
+}
+
+  .right2
+  {
+      padding-top: 10px;
+      width: 25%;
+      float: right;
+  }
+
+  #budgetResult {
+      float: right;
+      padding-top: 45px;
+  }
+    
+  button.budget{
+	background-color: black;
+	border: 3px solid white;
+	color: whitesmoke;
+	display: block;
+	margin-bottom: 10px;
+    padding: 12px 10px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    float: left;
+    width: 100%;
+    height: 130px;
+}
+
+button.budget:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+
+p.budgetText {
+    font-size: 16px;
+}

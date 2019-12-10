@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Life Planner</title> <!-- set to the right-->
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="screen and (orientation:portrait)" />
+    <link rel="stylesheet" type="text/css" href="styles/landscape.css" media="screen and (orientation:landscape)" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="initBody();">
+    <div id="page-container">
+        <div id="heading">
+            <a href="index.html">
+                <header>LIFE PLANNER</header>
+            </a>
+            <button class="settings" onclick="settings();"><img id="wheel" src="images/wheel.png"></button>
+        </div>
+        </br>
+        </br>
+        <div id="content">
+            <div id="welcome">
+                </br>
+                </br>
+                <h1>Welcome to Life Planner.</h1>
+                </br>
+                <p>What would you like to do today? </p>
+                </br>
+            </div>
+            <div id="button-container">
+                </br>
+                <button id="listButton" onclick="listView();" class="menu">View List</button>
+                </br>
+                <button id="calendarButton" onclick="calendarView();" class="menu">View Calendar</button>
+                </br>
+                <button id="budgetButton" onclick="budgetView();" class="menu">Manage Budget</button>
+            </div>
+            <div id="list-container">
+                <h1 style="text-decoration: underline;">Your Current Assignment List</h1>
+                <div id="list-div">
+                    <p>Format: Assignmet Name | Class/Group | Time | Due Date</>
+                        <ul id="listUL">
+                            <li>Assignment 4 | HCI | 5 Hours | 2019-12-05</li>
+                        </ul>
+                        <p id="totalHours" style="float: right;">Total Hours: 5</p>
+                </div>
+                </br>
+                </br>
+                </br>
+                <div class="left">
+                    <input class="listInput" type="text" id="listInput" placeholder="New Assignment...">
+                    <input class="listInput" type="text" id="classInput" placeholder="Class/Group">
+                    <input class="listInput" type="number" id="timeInput" placeholder="Estimated Time (Hours)">
+                    <input class="listInput" type="date" id="dateInput">
+                </div>
+                <div class="right">
+                    <button class="list" id="addNewButton" onclick="addNew();">Add New Item</button>
+                </div>
+            </div>
+            <div id="calendar">
+                <p>Calendar is a work in progress, please check again later.</p>
+            </div>
+            <div id="budget-container">
+                <h2>You came here for some insight about your budget!</h2>
+                <div class="left2">
+                    <input class="budgetInput" type="number" id="totalBudget" placeholder="Total Budget ($)">
+                    <input class="budgetInput" type="number" id="numWeeks" placeholder="Total number of weeks">
+
+                </div>
+                <div class="right2">
+                    <button class="budget" id="budgetButton" onclick="calcBudget();">Calc Budget</button>
+                </div>
+                <div id="budgetResults">
+                    <h2 style="text-decoration: underline;">Budget Results</h2>
+                    <p class="budgetText" id="daily">Daily Budget ($): </p>
+                    <p class="budgetText" id="dailyValue">0</p>
+                    </br>
+                    <p class="budgetText" id="weekly">Weekly Budget ($): </p>
+                    <p class="budgetText" id="weeklyValue">0</p>
+                </div>
+            </div>
+        </div>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        <div id="footer">
+            <div class="bottomnav" id="myBotnav">
+                <button id="list" onclick="listView();" class="notActive">
+                    <h2 id="listB" class="notActive">List</h2>
+                </button>
+                <button id="cal" onclick="calendarView();" class="notActive">
+                    <h2 id="calB" class="notActive">Calendar</h2>
+                </button>
+                <button id="budget" onclick="budgetView();" class="notActive">
+                    <h2 id="budB" class="notActive">Budget</h2>
+                </button>
+            </div>
+            <footer>CS3041: Human-Computer Interaction &copy; 2019</footer>
+        </div>
+    </div>
+    <script src="scripts/myjs.js"></script>
+</body>
+
+</html>

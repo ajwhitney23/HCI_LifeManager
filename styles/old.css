@@ -1,0 +1,127 @@
+header {
+    font-family: 'Trebuchet MS';
+    font-weight: bold condensed;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 3px;
+}
+
+body {
+    font-family: 'Trebuchet MS';
+    font-weight: bold condensed;
+    color: black;
+    font-size: 16px;
+    background: darkgrey;
+    padding: 42px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+    color: orangered;
+    font-size: 20px;
+    padding: 1px;
+}
+
+#content {
+    padding: 3px;
+}
+
+#WPI {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#main_nav li {
+    list-style-type: none;
+}
+
+#main_nav li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 9px;
+    color: #222;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0),
+   rgba(255,255,255,1));
+    border: 1px solid #666;
+}
+
+footer {
+    background: #666;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 15px;
+}
+
+video {
+    /* add your style definitions here */
+
+    /* transitions applied to the video element */
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
+audio {
+    width: 600px;
+    box-shadow: 5px 6px 20px black;
+    border-radius: 15px;
+}
+
+button.back{
+    /*These lines override the previous styling of buttons*/
+   -webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+   width:60px;
+   height: 30px;
+    
+   /*These lines position the back button inside the header*/
+   position:absolute;
+   left:16px;
+   top:8px; 
+}   
+
+header.secondary{   
+    padding-left: 75px;
+}
+
+
+button {
+ 
+    /*center the button*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     
+    /* add your code to set top and bottom margins */
+    margin-top: 13px;
+    margin-bottom: 26px;
+     
+    /*add an image to your button*/
+    -webkit-border-image: url("orangeButton.png") 0 14 0 14 stretch;
+     
+    /*set width and height for the button*/
+    width: 150px;
+    height: 75px;
+
+}
+    
